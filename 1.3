@@ -1,0 +1,46 @@
+hello new file it wils 
+
+
+To convert a .pem file to a .ppk file that can be used in PuTTY, you can follow these steps:
+
+Download and install the PuTTY Key Generator (PuTTYgen) from the official website.
+Open PuTTYgen and click on the "Load" button.
+In the "Load Private Key" dialog box, change the file type filter to "All Files (.)".
+Navigate to the location of your .pem file, select it, and click on the "Open" button.
+PuTTYgen will show a message that it has successfully imported the key, click on the "OK" button.
+Click on the "Save private key" button to save the key in the .ppk format.
+A warning message will appear informing you that the key will be saved without a passphrase. Click on the "Yes" button to confirm.
+Choose a name for the .ppk file and save it to a location of your choice.
+Once you have created the .ppk file, you can use it to connect to your EC2 instance in PuTTY by following the steps I outlined in my previous answer.
+
+
+
+
+anirudhmudhulkar@gmail.com
+how to install git in install 
+To install Git on an EC2 instance running a Linux-based operating system, you can follow these steps:
+
+Connect to your instance using SSH (e.g., using PuTTY as described in my previous answer).
+
+Run the following command to update the package index and make sure that the system is up-to-date:
+
+sql
+Copy code
+sudo apt-get update
+Run the following command to install Git:
+
+csharp
+Copy code
+sudo apt-get install git
+Once the installation is complete, verify that Git was installed by running the following command:
+
+css
+Copy code
+git --version
+This should display the version number of Git that was installed.
+
+That's it! You now have Git installed on your EC2 instance and can use it for version control, code collaboration, and more.
+
+
+
+
